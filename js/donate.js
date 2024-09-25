@@ -4,6 +4,7 @@ donateBtn.addEventListener('click', function(){
     alert(" sucessfully Donate ")
     if(donateAmountElement <=0 || isNaN(donateAmountElement)){
        document.getElementById('error-ms').classList.remove('hidden');
+       return;
         
     }
    const balance = parseFloat(document.getElementById('balance').innerText)
