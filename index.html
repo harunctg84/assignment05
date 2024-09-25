@@ -66,23 +66,27 @@
 
         </div>
     </section>
+    
+
     <section class="w-11/12 mx-auto flex  justify-center gap-10 bg-slate-100 p-4 rounded-lg mb-5">
         <div class="w-5/12">
             <img src="assets/feni.png" alt="">
         </div>
         <div class="w-6/12">
-            <div class=" flex  items-center w-1/12  gap-2 ">
-                <img src="assets/coin.png" alt="">
-                <p class="text-black font-bold">400BDT</p>
-                
-            </div>
+          <div class=" flex  items-center w-1/12  gap-2 ">
+            <img src="assets/coin.png" alt="">
+            <p class="text-black font-bold" id ="balance">00</p>
+            <p class="text-black font-bold">BDT</p>
+            
+        </div>
 
             <h1 class="text-black font-bold mt-[10px] mb-2">Donate for flood at feni, Bangladesh</h1>
             <p>
                 The recent floods in Feni, Bangladesh, have caused widespread devastation, displacing families and destroying homes, crops, and infrastructure. Thousands are struggling without access to clean water, food, or shelter. Immediate assistance is crucial to meet the basic needs of those affected. Your donation can help provide emergency relief, including food supplies, medical aid, and temporary shelters for displaced families. The people of Feni urgently need your support to recover from this disaster. Every contribution counts in restoring hope and rebuilding lives. Stand with us to make a difference today.
             </p>
-            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
-            <button class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+            <input  id ="donate-amount" type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" />
+            <p class="text-red-600 font-bold hidden" id ="error-ms">Invalid Donate Amount !</p>
+            <button  id = "donate-btn" class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
 
         </div>
     </section>
@@ -92,18 +96,20 @@
         </div>
         <div class="w-6/12">
             <div class=" flex  items-center w-1/12  gap-2 ">
-                <img src="assets/coin.png" alt="">
-                <p class="text-black font-bold">400BDT</p>
-                
-            </div>
+              <img src="assets/coin.png" alt="">
+              <p class="text-black font-bold" id ="balance">00</p>
+              <p class="text-black font-bold">BDT</p>
+              
+          </div>
 
             <h1 class="text-black font-bold mt-[10px] mb-2">Aid for Injured for quota movement, Bangladesh</h1>
             <p>
                 During the Quota Reform Movement in Bangladesh, many students and activists were injured while advocating for fair employment opportunities. These brave individuals risked their safety to demand justice and equal rights. As they recover from their injuries, they face mounting medical expenses, and many are struggling to afford proper care. Your support is crucial in providing them with necessary medical aid, rehabilitation, and financial assistance during this difficult time. By donating, you can help them heal and stand strong once again. Let’s stand together to support the injured and ensure their voices are not forgotten. Every contribution makes a difference.
 
             </p>
-            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
-            <button class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+            <input  id ="donate-amount" type="text" placeholder ="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" />
+            <p class="text-red-600 font-bold hidden" id ="error-ms">Invalid Donate Amount !</p>
+            <button id = "donate-btn" class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
 
         </div>
     </section>
@@ -111,7 +117,7 @@
      
 </main>
  
-   <div>
+   <div class ="hidden" id = "history-section">
     <h1 class ="text-2xl font-bold text-black ml-[300px] mt-8 w-11/12 mx-auto ">History Section</h1>
     <div id ="history-section" class="w-11/12 mx-auto h-80 rounded-lg border-red-500 bg-slate-400">
         
